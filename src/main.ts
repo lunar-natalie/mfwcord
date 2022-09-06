@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import { Client } from "discordx";
 import { dirname, importx } from "@discordx/importer";
-import { IntentsBitField } from "discord.js";
+import { ActivityType, IntentsBitField } from "discord.js";
 import { readFileSync } from "fs";
 import type { Interaction, Message } from "discord.js";
 
@@ -70,6 +70,10 @@ async function run(): Promise<void> {
     }
 
     await bot.login(token);
+
+    bot.user?.setPresence({
+        activities: [{ name: "me when the 💀", type: ActivityType.Listening }]
+    });
 }
 
 run();
