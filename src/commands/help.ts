@@ -13,7 +13,8 @@ export class Help {
         name: "help",
     })
     async show(interaction: CommandInteraction): Promise<void> {
-        const commands = MetadataStorage.instance.applicationCommands.map((cmd) => {
+        const commands = MetadataStorage.instance.applicationCommands.map(
+            (cmd) => {
             return { description: cmd.description, name: cmd.name };
         });
 

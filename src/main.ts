@@ -11,7 +11,8 @@ import type { Interaction, Message } from "discord.js";
 export const bot = new Client({
     // To only use global commands (use @Guild for specific guild command),
     // comment the following line.
-    botGuilds: [(client) => client.guilds.cache.map((guild) => guild.id)],
+    botGuilds: [(client): string[] =>
+        client.guilds.cache.map((guild) => guild.id)],
 
     intents: [IntentsBitField.Flags.Guilds],
 
