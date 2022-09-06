@@ -3,16 +3,16 @@ import { EmbedBuilder } from "discord.js";
 import { Pagination } from "@discordx/pagination";
 import type { CommandInteraction } from "discord.js";
 
-/**
- * Shows pages with command descriptions.
- */
 @Discord()
 export class Help {
+    /**
+     * Shows pages with command descriptions.
+     */
     @Slash({
         description: "Show usage",
         name: "help",
     })
-    async pages(interaction: CommandInteraction): Promise<void> {
+    async show(interaction: CommandInteraction): Promise<void> {
         const commands = MetadataStorage.instance.applicationCommands.map((cmd) => {
             return { description: cmd.description, name: cmd.name };
         });
