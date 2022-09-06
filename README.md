@@ -33,24 +33,24 @@ Discord bot to generate incomprehensible meme strings.
 
 ## Setup
 
-* Log into the [Discord Developer Portal](https://discord.com/developers)
+* Log into the [Discord Developer Portal](https://discord.com/developers).
 * Go to [Applications](https://discord.com/developers/applications), select
-  `New Application`, and enter the required details
+  `New Application`, and enter the required details.
 * In the new application, go to `Bot` in the sidebar, select `Add Bot` and
-  confirm
+  confirm.
 * Under `Privileged Gateway Intents`, enable `Precence Intent`,
-  `Server Members Intent`, and `Message Content Intent`
-* Under `Build-A-Bot`, select `Reset Token`
+  `Server Members Intent`, and `Message Content Intent`.
+* Under `Build-A-Bot`, select `Reset Token`:
   * Copy this token and either set the `TOKEN` environment variable to it, or
-    save it to [`token.txt`](token.txt)
+    save it to [`token.txt`](token.txt).
 * Go to `OAuth2` > `General` in the sidebar and under `Redirects` add any URI
   as the bot does not currently use the full OAuth2 chain
-  (e.g. [`https://github.com/lunar-natalie/mfw`](https://github.com/lunar-natalie/mfw))
-* Go to `OAuth2` > `URL Generator` in the sidebar
-  * Under scopes, enable `bot` and `applications.commands`
-  * Under `Bot Permissions`, enable `Send Messages`
+  (e.g. [`https://github.com/lunar-natalie/mfw`](https://github.com/lunar-natalie/mfw).)
+* Go to `OAuth2` > `URL Generator` in the sidebar:
+  * Under scopes, enable `bot` and `applications.commands`.
+  * Under `Bot Permissions`, enable `Send Messages`.
   * Copy the generated URL, paste it into a web browser and follow the
-    instructions to add the bot to a server
+    instructions to add the bot to a server.
 
 ## Development
 
