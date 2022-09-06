@@ -43,7 +43,8 @@ Discord bot to generate incomprehensible meme strings.
 * Under `Build-A-Bot`, select `Reset Token`
   * Copy this token and either set the `TOKEN` environment variable to it, or
     save it to [`token.txt`](token.txt)
-* Go to `OAuth2` > `General` in the sidebar and under `Redirects` add a URI
+* Go to `OAuth2` > `General` in the sidebar and under `Redirects` add any URI
+  as the bot does not currently use the full OAuth2 chain
   (e.g. [`https://github.com/lunar-natalie/mfw`](https://github.com/lunar-natalie/mfw))
 * Go to `OAuth2` > `URL Generator` in the sidebar
   * Under scopes, enable `bot` and `applications.commands`
