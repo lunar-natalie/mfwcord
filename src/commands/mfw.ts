@@ -54,7 +54,7 @@ export class Mfw {
             for (let j = 0; j < termAttribs.secondaryCount; ++j) {
                 el += getRandomElement(terms.secondary) + " ";
                 if (result.length + el.length > termAttribs.maxLength) {
-                    break;
+                    return result.trim();
                 }
             }
 
